@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Site</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>{{ 5 * 6 }}</h2>
+    <h3>Random number is: {{ rand_num }}</h3>
+    <a href="{{ url_for('get_blog', test_num=8) }}">Blog Posts</a>
+    <!--- The above url_for() will generate a url for you to the blogs page
+          You can also pass in parameters to go back into the function -->
+</body>
+<footer>
+    <p>Copyright {{ cur_year }}. Built by Russel Nicosia.</p>
+</footer>
+</html>

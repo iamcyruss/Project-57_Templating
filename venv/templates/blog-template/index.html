@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    {{ test_num }}
+    {% for i in blog_data %}
+        <h1>{{ i["id"] }}. {{ i["title"] }}</h1>
+        <h2>Subtitle: {{ i["subtitle"] }}</h2>
+        <h3>Body: {{ i["body"] }}</h3>
+    {% endfor %}
+</body>
+</html>
