@@ -20,7 +20,7 @@ def home():
     #return "hello world"
     #current_year = datetime.datetime.now().year
     random_number = random.randint(1, 10)
-    return render_template("example-template/index.html", rand_num=random_number, cur_year=get_year())
+    return render_template("new-blog/index.html", rand_num=random_number, cur_year=get_year())
 
 
 @app.route('/guess/<name>')
